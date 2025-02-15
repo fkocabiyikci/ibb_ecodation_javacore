@@ -6,7 +6,7 @@ import java.util.Scanner;
 /*
 Kullanıcının Verdiği pozitif bir sayıya kadar toplamını yapan hesaplayan Algoritma ?
 Şartlar - 1 : Kullanıcı eğer sayı olarak  100  fazla sayı girerse 100'e kadar toplasın. (break)
-Şartlar - 2 : Kullanıcı verdiği sayılar içinde eğer 47 varsa bunu toplamaya dahil etmesin.(continue)
+Şartlar - 2 : Kullanıcı verdiği sayılar içinde eğer 47 varsa bunu toplamaya dahil etmesin. (continue)
 Çıkan sonuç tek mi ? çift mi ?
  */
 public class _11_1_Return_Continue_Break {
