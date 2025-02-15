@@ -9,6 +9,5 @@ public class _09_2_Conditional {
             System.out.println("Pozitif sayıdır");
         else
             System.out.println("Negatif Sayıdır");
-
     }
 }

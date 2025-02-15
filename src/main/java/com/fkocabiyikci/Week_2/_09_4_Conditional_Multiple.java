@@ -16,7 +16,7 @@ public class _09_4_Conditional_Multiple {
         } else if (number == 5) {
             System.out.println("sayı 5");
         } else {
-            System.out.println(number + " 1<=NUMBER<=5 dışındadır");
+            System.out.println(number + " 1<=NUMBER<=5 dışındadır.");
         }
 
     }
