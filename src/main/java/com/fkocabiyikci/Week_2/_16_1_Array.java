@@ -1,6 +1,7 @@
 package com.fkocabiyikci.Week_2;
 
 
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
@@ -28,7 +29,7 @@ public class _16_1_Array {
     public static String[] arrayMethod2() throws ArrayIndexOutOfBoundsException {
         // String dizisi
         //String[] city = {"Malatya", "Elazığ", "Bingöl", null, "Muş", "Van"}; // Eleman sayısı:10
-        String[] city = {"Malatya", "Elazığ", "Bingöl", "Muş", "Van"}; // Eleman sayısı:10
+        String[] city = {"Malatya", "Elazığ", "Bingöl", "Muş", "Van","İstanbul","Ankara","Sivas","Konya","Nevşehir"}; // Eleman sayısı:10
         return city;
     }
 
@@ -76,19 +77,54 @@ public class _16_1_Array {
         }
     }
 
+    /// ////////////////////////////////////////////////////////////////////
 
-    public static int randomNumber(){
-        Random random= new Random();
-        int rndInt= random.nextInt(9)+1;
+    // Clone, Sort, Binarysearch, forEach
+    public static void arrayMethod7() {
+        // Original
+        String[] originalCity = arrayMethod2();
+
+        // Clone
+        String[] cloneCity= Arrays.copyOf(originalCity, originalCity.length);
+
+        // Dizilerde Sıralama (Küçükten Büyüğe Doğru sıralama)
+        Arrays.sort(cloneCity);
+        //Arrays.sort(cloneCity, Collections.reverseOrder());
+
+        // for each
+        for (String temp : cloneCity) {
+            System.out.println(_15_4_SpecialColor.BLUE + temp + _15_4_SpecialColor.RESET);
+        }
+
+        // Binary Search
+        String searchCity="Sivas";
+        int index= Arrays.binarySearch(cloneCity,searchCity);
+        if(index>=0){
+            System.out.println(searchCity+_15_4_SpecialColor.BLUE   +" ili bulunmaktadır"+_15_4_SpecialColor.RESET);
+        }else{
+            System.out.println(searchCity+_15_4_SpecialColor.RED +" ili yoktur"+_15_4_SpecialColor.RESET);
+        }
+    }
+    /// //////////////////////////////////////////////////////////////
+    // Random Number
+    public static int randomNumber() {
+        Random random = new Random();
+        int rndInt = random.nextInt(9) + 1; // 1<=NUMBER<=9
         return rndInt;
     }
 
-    // fill
-    public static void arrayMethod7() {
+    // fill:
+    public static void arrayMethod8() {
         int[] number = new int[7];
 
-        // iterative for
-        Arrays.fill(number,randomNumber()); // 5 sayısı ile doldur
+        //fill: metodu tek bir değeri dizinin tüm elemanlarına atamak için tasarlanmıştır
+        Arrays.fill(number, randomNumber());
+
+        // iterative for ile her defasında farklı bir sayı gelsin
+        for (int i = 0; i <number.length ; i++) {
+            //number[i]=randomNumber(); // (1.YOL)
+            Arrays.setAll(number, data -> randomNumber()); // (2.YOL)
+        }
 
         // for each
         for (int temp : number) {
@@ -96,7 +132,7 @@ public class _16_1_Array {
         }
     }
 
-
+    // binary Search, copy
 
     // PSVM
     public static void main(String[] args) {
@@ -107,5 +143,6 @@ public class _16_1_Array {
         //arrayMethod5();
         //arrayMethod6();
         arrayMethod7();
+        //arrayMethod8();
     }
 } //end class
