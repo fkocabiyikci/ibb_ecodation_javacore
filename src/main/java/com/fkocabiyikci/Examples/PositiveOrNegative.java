@@ -2,6 +2,7 @@ package com.fkocabiyikci.Examples;
 
 import java.util.Scanner;
 
+
 public class PositiveOrNegative {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

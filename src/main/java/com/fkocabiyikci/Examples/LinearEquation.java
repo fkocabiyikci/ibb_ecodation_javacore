@@ -2,6 +2,7 @@ package com.fkocabiyikci.Examples;
 
 import java.util.Scanner;
 
+
 public class LinearEquation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
