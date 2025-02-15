@@ -1,4 +1,4 @@
-package com.fkocabiyikci._1_javatypes;
+package com.fkocabiyikci.Week_1;
 
 
 public class _04_1_JavaWrapperTypes {
