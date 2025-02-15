@@ -8,9 +8,9 @@ public class _10_3_Loop_DoWhile {
     // Şart sağlansa da sağlanmasa da döngü çalışır.
 
     public static void main(String[] args) {
-        // i++
-        // i=i+1
-        // i+=1
+        // i++  i'nin değerini 1 artırır.
+        // i=i+1 i değişkeninin mevcut değerine 1 ekleyerek yeni değerini atar.
+        // i+=1 i'nin değerine 1 ekler ve sonucu i'ye geri atar.
 
         int i = 40;
         do {
