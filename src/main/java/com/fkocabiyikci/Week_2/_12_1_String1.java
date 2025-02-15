@@ -32,8 +32,8 @@ public class _12_1_String1 {
         System.out.println("equals: "+vocabulary1.equals(vocabulary2));
         System.out.println("equalsIgnoreCase: "+vocabulary1.equalsIgnoreCase(vocabulary2));
 
-        // startsWith(): ile mi başlıyor
-        // endsWith(): ile mi bitiyor
+        // startsWith(): ile mi başlıyor?
+        // endsWith(): ile mi bitiyor?
         System.out.println(vocabulary1.startsWith("J") + " ile mi başlıyor");
         System.out.println(vocabulary1.endsWith(" ") + " ile mi bitiyor");
 

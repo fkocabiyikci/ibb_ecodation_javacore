@@ -8,7 +8,6 @@ public class _13_2_MethodIsReturn {
         return "metot Returnlu Parametresiz";
     }
 
-
     // 4-) Return lu parametreli
     public Integer metotReturluParametreli(int number) {
         return number;

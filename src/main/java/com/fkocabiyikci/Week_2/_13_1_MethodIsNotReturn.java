@@ -13,7 +13,7 @@ public class _13_1_MethodIsNotReturn {
         System.out.println("metot Returnsuz Parametreli "+name);
     }
 
-    // Overloading(Aşırı Yüklemek)
+    // Overloading(Aşırı Yükleme)
     public static void metotReturnsuzParametreli(String name,String surname){
         System.out.println("metot Returnsuz Parametreli "+name+" "+surname);
     }
